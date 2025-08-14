@@ -24,7 +24,7 @@ export default function Home() {
         <Row gutter={[16, 16]} justify="center">
           {['Proje 1', 'Proje 2', 'Proje 3', 'Proje 4'].map((proj, i) => (
             <Col key={i} xs={24} sm={12} md={8} lg={6}>
-              <Card title={proj} bordered hoverable>
+              <Card title={proj} variant="outlined" hoverable>
                 Bu proje hakkında kısa bir açıklama.
               </Card>
             </Col>
