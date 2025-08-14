@@ -1,5 +1,6 @@
 import { Button, Card, Row, Col, Form, Input } from 'antd';
 import Contact from '../pages/Contact';
+import About from '../pages/About';
 
 export default function Home() {
   return (
@@ -14,12 +15,8 @@ export default function Home() {
         </Button>
       </section>
 
-      <section id="about" style={{ padding: '100px 20px', background: '#f0f2f5', textAlign: 'center' }}>
-        <h2 style={{ fontSize: '36px', marginBottom: '20px' }}>Hakkımda</h2>
-        <p style={{ maxWidth: '700px', margin: '0 auto', fontSize: '18px' }}>
-          Ben bir yazılım mühendisiyim. React ve Ant Design ile modern web uygulamaları geliştiriyorum.
-          UI/UX ve responsive tasarıma önem veriyorum.
-        </p>
+      <section >
+            <About/>
       </section>
 
       <section id="projects" style={{ padding: '100px 20px', textAlign: 'center' }}>
@@ -37,23 +34,6 @@ export default function Home() {
           <section>
             <Contact/>
           </section>
-      {/* <section id="contact" style={{ padding: '100px 20px', background: '#f0f2f5', textAlign: 'center' }}>
-        <h2 style={{ fontSize: '36px', marginBottom: '40px' }}>İletişim</h2>
-        <Form layout="vertical" style={{ maxWidth: '500px', margin: '0 auto' }}>
-          <Form.Item label="İsim" name="name">
-            <Input placeholder="Adınızı girin" />
-          </Form.Item>
-          <Form.Item label="Email" name="email">
-            <Input placeholder="Email adresinizi girin" />
-          </Form.Item>
-          <Form.Item label="Mesaj" name="message">
-            <Input.TextArea rows={4} placeholder="Mesajınızı girin" />
-          </Form.Item>
-          <Form.Item>
-            <Button type="primary" htmlType="submit">Gönder</Button>
-          </Form.Item>
-        </Form>
-      </section> */}
     </div>
   );
 }

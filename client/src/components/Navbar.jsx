@@ -12,8 +12,7 @@ export default function Navbar() {
     };
     const element = document.getElementById(idMap[e.key]);
     if (element) {
-      // Navbar yüksekliğini hesaba katarak kaydırma yapıyoruz
-      const yOffset = -64; // Navbar yüksekliği kadar yukarıda durması için
+      const yOffset = -64; 
       const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
       
       window.scrollTo({
