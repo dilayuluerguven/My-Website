@@ -1,4 +1,5 @@
 import { Button, Card, Row, Col, Form, Input } from 'antd';
+import Contact from '../pages/Contact';
 
 export default function Home() {
   return (
@@ -33,8 +34,10 @@ export default function Home() {
           ))}
         </Row>
       </section>
-
-      <section id="contact" style={{ padding: '100px 20px', background: '#f0f2f5', textAlign: 'center' }}>
+          <section>
+            <Contact/>
+          </section>
+      {/* <section id="contact" style={{ padding: '100px 20px', background: '#f0f2f5', textAlign: 'center' }}>
         <h2 style={{ fontSize: '36px', marginBottom: '40px' }}>İletişim</h2>
         <Form layout="vertical" style={{ maxWidth: '500px', margin: '0 auto' }}>
           <Form.Item label="İsim" name="name">
@@ -50,7 +53,7 @@ export default function Home() {
             <Button type="primary" htmlType="submit">Gönder</Button>
           </Form.Item>
         </Form>
-      </section>
+      </section> */}
     </div>
   );
 }
