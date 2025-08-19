@@ -60,7 +60,9 @@ export default function Home() {
         transition={{ duration: 1 }}
         className="hero-section"
       >
-        <div className="terminal-window"></div>
+        <div className="terminal-window">
+          
+        </div>
 
         <motion.div
           className="hero-buttons"
@@ -68,7 +70,18 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 2, duration: 0.8 }}
         >
-        
+          <Button
+            className="terminal-btn-primary"
+            size="large"
+            onClick={() =>
+              document
+                .getElementById("about")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+            icon={<RocketOutlined />}
+          >
+            Keşfet
+          </Button>
           <Button
             className="terminal-btn-secondary"
             size="large"
@@ -104,6 +117,21 @@ export default function Home() {
           >
             <LinkedinOutlined />
           </a>
+        </motion.div>
+
+        <motion.div
+          className="scroll-indicator"
+          animate={{
+            y: [0, 10, 0],
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        >
+          <div className="scroll-line"></div>
+          <span>Kaydır</span>
         </motion.div>
       </motion.section>
     </div>
