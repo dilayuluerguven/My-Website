@@ -7,18 +7,22 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "tailwind:init": "tailwindcss init -p"
+    "preview": "vite preview"
   },
   "dependencies": {
     "antd": "^5.27.0",
     "bootstrap": "^5.3.7",
     "framer-motion": "^12.23.12",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.8.1",
+    "react-router-hash-link": "^2.4.3",
+    "react-scroll": "^1.9.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
+    "@tailwindcss/postcss": "^4.1.12",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react": "^5.0.0",
