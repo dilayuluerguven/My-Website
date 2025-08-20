@@ -7,6 +7,7 @@ import {
   GithubOutlined,
   LinkedinOutlined,
   DownloadOutlined,
+  InstagramOutlined,
 } from "@ant-design/icons";
 import "../css/Home.css";
 
@@ -61,7 +62,36 @@ export default function Home() {
         className="hero-section"
       >
         <div className="terminal-window">
-          
+          <div className="terminal-header">
+            <div className="terminal-buttons">
+              <span className="terminal-btn close"></span>
+              <span className="terminal-btn minimize"></span>
+              <span className="terminal-btn maximize"></span>
+            </div>
+            <span className="terminal-title">bash — 80×30</span>
+          </div>
+          <div className="terminal-body">
+            <div className="terminal-line">
+              <span className="terminal-prompt">visitor@portfolio:~$ </span>
+              <span className="terminal-command">cat introduction.txt</span>
+            </div>
+            <div className="terminal-output">
+              <h1 className="hero-title">
+                <CodeOutlined className="title-icon" />
+                Merhaba, Ben Dilay
+              </h1>
+              <p className="hero-subtitle">Full Stack Developer </p>
+            </div>
+            <div className="terminal-line">
+              <span className="terminal-prompt">visitor@portfolio:~$ </span>
+              <span className="typed-text">
+                {typedText}
+                <span className={`cursor ${cursorVisible ? "visible" : ""}`}>
+                  |
+                </span>
+              </span>
+            </div>
+          </div>
         </div>
 
         <motion.div
@@ -70,18 +100,6 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 2, duration: 0.8 }}
         >
-          <Button
-            className="terminal-btn-primary"
-            size="large"
-            onClick={() =>
-              document
-                .getElementById("about")
-                .scrollIntoView({ behavior: "smooth" })
-            }
-            icon={<RocketOutlined />}
-          >
-            Keşfet
-          </Button>
           <Button
             className="terminal-btn-secondary"
             size="large"
@@ -98,7 +116,7 @@ export default function Home() {
         </motion.div>
 
         <motion.div
-          className="social-icons"
+          className="social-icons " 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2.5, duration: 0.8 }}
@@ -117,6 +135,13 @@ export default function Home() {
           >
             <LinkedinOutlined />
           </a>
+          <a
+            href="https://www.instagram.com/dilay_uluerguven?igsh=MXNpYm1wZjN2amxsYw%3D%3D&utm_source=qr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <InstagramOutlined />
+          </a>
         </motion.div>
 
         <motion.div
@@ -129,6 +154,7 @@ export default function Home() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
+          
         >
           <div className="scroll-line"></div>
           <span>Kaydır</span>

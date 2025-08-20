@@ -1,0 +1,278 @@
+
+.about-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-title {
+  font-size: 42px;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #1890ff 0%, #722ed1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-divider {
+  max-width: 80px;
+  border-width: 2px;
+  border-color: #1890ff;
+  margin: 0 auto;
+}
+
+.about-subtitle {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 20px auto 0;
+  color: #666;
+}
+
+.profile-card {
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: none;
+}
+
+.profile-image-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 25px;
+  border: 3px solid #1890ff;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-name {
+  margin-bottom: 5px;
+  color: #262626;
+}
+
+.profile-title {
+  font-size: 16px;
+  color: #595959;
+}
+
+.profile-divider {
+  margin: 25px 0;
+  border-color: #f0f0f0;
+}
+
+.contact-info {
+  text-align: left;
+  padding: 0 15px;
+}
+
+.contact-item {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  color: #1890ff;
+  font-size: 16px;
+  margin-right: 12px;
+  min-width: 20px;
+}
+
+.contact-text {
+  color: #595959;
+}
+
+.content-card {
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: none;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  color: #262626;
+  display: flex;
+  align-items: center;
+}
+
+.section-icon {
+  color: #1890ff;
+  margin-right: 10px;
+}
+
+.professional-summary {
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: left;
+  margin-bottom: 0;
+  color: #595959;
+}
+
+.education-timeline {
+  padding-left: 10px;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #1890ff;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 7px;
+  top: 21px;
+  bottom: -25px;
+  width: 2px;
+  background: #1890ff;
+  opacity: 0.3;
+}
+
+.timeline-school {
+  font-size: 18px;
+  color: #262626;
+}
+
+.skills-container {
+  margin-top: 30px;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  height: 100%;
+  border: none;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.skill-category-icon {
+  color: #1890ff;
+  font-size: 24px;
+  margin-right: 12px;
+}
+
+.skill-category-title {
+  margin: 0;
+  color: #262626;
+}
+
+.skill-item {
+  margin-bottom: 15px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.other-tech {
+  margin-top: 20px;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-tag {
+  border-radius: 12px;
+  padding: 5px 12px;
+}
+
+.experience-item {
+  position: relative;
+  padding-left: 30px;
+}
+
+.experience-dot {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #1890ff;
+}
+
+.experience-company {
+  margin-bottom: 5px;
+  color: #262626;
+}
+
+.experience-role {
+  display: block;
+  margin-bottom: 10px;
+  color: #1890ff;
+}
+
+.experience-description {
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #595959;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 15px;
+  }
+  
+  .about-title {
+    font-size: 32px;
+  }
+  
+  .profile-card,
+  .content-card {
+    padding: 20px 15px;
+  }
+  
+  .profile-image-container {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .tech-tags {
+    justify-content: center;
+  }
+}

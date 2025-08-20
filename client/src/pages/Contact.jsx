@@ -1,5 +1,8 @@
-import { Form, Input, Button, Typography, Row, Col, Divider, Space } from 'antd';
-import { MailOutlined, PhoneOutlined, HomeOutlined, GithubOutlined, LinkedinOutlined, InstagramOutlined } from '@ant-design/icons';
+import { Row, Col, Form, Input, Button, Divider, Space, Typography } from 'antd';
+import { PhoneOutlined, MailOutlined, HomeOutlined, GithubOutlined, LinkedinOutlined, InstagramOutlined } from '@ant-design/icons';
+import { motion } from 'framer-motion';
+import "../css/Contact.css"
+
 
 const { Title, Text, Link } = Typography;
 
@@ -47,26 +50,48 @@ const Contact = () => {
         </div>
 
         <Divider style={{ margin: '20px 0' }} />
-
-        <div style={{ marginTop: 'auto' }}> 
-          <Space direction="vertical" size="middle">
-            <Text strong style={{ fontSize: '18px' }}>Sosyal Medya</Text>
-            <Space size="middle">
-              <Link href="https://github.com/dilayuluerguven" target="_blank" rel="noopener noreferrer" style={{ color: '#333', fontSize: '22px' }}>
+         <div className="social-section">
+          <Text strong className="social-title">Sosyal Medya</Text>
+          <Text className="social-description">
+            Benimle sosyal medya üzerinden iletişime geçebilir veya projelerimi inceleyebilirsiniz.
+          </Text>
+          
+          <Space size="middle" className="social-icons">
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <Link 
+                href="https://github.com/dilayuluerguven" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="social-link github"
+              >
                 <GithubOutlined />
               </Link>
-              <Link href="https://linkedin.com/in/dilay-uluergüven-2b484125b" target="_blank" rel="noopener noreferrer" style={{ color: '#333', fontSize: '22px' }}>
+            </motion.div>
+            
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <Link 
+                href="https://linkedin.com/in/dilay-uluergüven-2b484125b" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="social-link linkedin"
+              >
                 <LinkedinOutlined />
               </Link>
-              <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{ color: '#333', fontSize: '22px' }}>
+            </motion.div>
+            
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <Link 
+                href="https://instagram.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="social-link instagram"
+              >
                 <InstagramOutlined />
-              </Link> 
-            </Space>
-            <Text type="secondary" style={{ lineHeight: 1.6 }}>
-              Benimle sosyal medya üzerinden iletişime geçebilir veya projelerimi inceleyebilirsiniz.
-            </Text>
+              </Link>
+            </motion.div>
           </Space>
         </div>
+       
       </div>
     </Col>
 

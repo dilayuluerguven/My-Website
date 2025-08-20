@@ -9,7 +9,6 @@
   overflow: hidden;
 }
 
-
 @keyframes float {
   0% {
     transform: translateY(0) translateX(0);
@@ -33,8 +32,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-  color: #64FFDA;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  color: #64ffda;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -42,7 +41,6 @@
   user-select: none;
 }
 
-/* Terminal window */
 .terminal-window {
   width: 100%;
   max-width: 800px;
@@ -75,29 +73,17 @@
   display: inline-block;
 }
 
-.terminal-btn.close {
-  background: #ff5f56;
-}
-
-.terminal-btn.minimize {
-  background: #ffbd2e;
-}
-
-.terminal-btn.maximize {
-  background: #27c93f;
-}
-
 .terminal-title {
   color: rgba(255, 255, 255, 0.6);
   font-size: 12px;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
 }
 
 .terminal-body {
   padding: 25px;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   min-height: 250px;
 }
 
@@ -108,7 +94,7 @@
 }
 
 .terminal-prompt {
-  color: #64FFDA;
+  color: #64ffda;
   margin-right: 8px;
   white-space: nowrap;
 }
@@ -123,12 +109,18 @@
 
 .terminal-cursor {
   animation: blink 1s infinite;
-  color: #64FFDA;
+  color: #64ffda;
 }
 
 @keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
 
 /* Hero text styles */
@@ -145,7 +137,7 @@
 .title-icon {
   margin-right: 15px;
   font-size: 2.5rem;
-  color: #64FFDA;
+  color: #64ffda;
 }
 
 .hero-subtitle {
@@ -158,11 +150,11 @@
 /* Typing animation */
 .typed-text {
   color: #ffffff;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
 }
 
 .cursor {
-  color: #64FFDA;
+  color: #64ffda;
   animation: blink 1s infinite;
 }
 
@@ -170,7 +162,6 @@
   opacity: 1;
 }
 
-/* Button styles */
 .hero-buttons {
   display: flex;
   gap: 15px;
@@ -181,7 +172,7 @@
 }
 
 .terminal-btn-primary {
-  background: linear-gradient(135deg, #64FFDA 0%, #00BFA5 100%);
+  background: linear-gradient(135deg, #64ffda 0%, #00bfa5 100%);
   border: none;
   color: #0a192f;
   font-weight: 600;
@@ -195,15 +186,15 @@
 .terminal-btn-primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(100, 255, 218, 0.4);
-  background: linear-gradient(135deg, #64FFDA 0%, #00BFA5 100%);
+  background: linear-gradient(135deg, #64ffda 0%, #00bfa5 100%);
   color: #0a192f;
   border: none;
 }
 
 .terminal-btn-secondary {
   background: transparent;
-  border: 1px solid #64FFDA;
-  color: #64FFDA;
+  border: 1px solid #64ffda;
+  color: #64ffda;
   font-weight: 600;
   height: 45px;
   padding: 0 25px;
@@ -213,12 +204,11 @@
 
 .terminal-btn-secondary:hover {
   background: rgba(100, 255, 218, 0.1);
-  color: #64FFDA;
-  border: 1px solid #64FFDA;
+  color: #64ffda;
+  border: 1px solid #64ffda;
   transform: translateY(-3px);
 }
 
-/* Social icons */
 .social-icons {
   display: flex;
   gap: 20px;
@@ -241,10 +231,10 @@
 }
 
 .social-icons a:hover {
-  color: #64FFDA;
+  color: #64ffda;
   transform: translateY(-3px);
   background: rgba(100, 255, 218, 0.2);
-  border: 1px solid #64FFDA;
+  border: 1px solid #64ffda;
 }
 
 /* Scroll indicator */
@@ -263,7 +253,7 @@
 .scroll-line {
   width: 2px;
   height: 40px;
-  background: linear-gradient(to bottom, #64FFDA, transparent);
+  background: linear-gradient(to bottom, #64ffda, transparent);
   margin-bottom: 10px;
 }
 
@@ -278,25 +268,25 @@
   .terminal-window {
     width: 90%;
   }
-  
+
   .hero-buttons {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .terminal-btn-primary,
   .terminal-btn-secondary {
     width: 200px;
   }
-  
+
   .terminal-body {
     padding: 15px;
   }
-  
+
   .hero-title {
     flex-direction: column;
   }
-  
+
   .title-icon {
     margin-right: 0;
     margin-bottom: 10px;
@@ -308,11 +298,11 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .terminal-prompt {
     margin-bottom: 5px;
   }
-  
+
   .social-icons a {
     width: 40px;
     height: 40px;
