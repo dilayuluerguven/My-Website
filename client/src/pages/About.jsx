@@ -12,7 +12,7 @@ import {
   BookOutlined,
   LaptopOutlined,
   ToolOutlined,
-  UserOutlined
+  UserOutlined,
 } from "@ant-design/icons";
 import { motion } from "framer-motion";
 import "../css/About.css";
@@ -95,9 +95,7 @@ const About = () => {
                 <Title level={3} className="profile-name">
                   Dilay Uluergüven
                 </Title>
-                <Text className="profile-title">
-                  Yazılım Mühendisi
-                </Text>
+                <Text className="profile-title">Yazılım Mühendisi</Text>
 
                 <Divider className="profile-divider" />
 
@@ -108,13 +106,8 @@ const About = () => {
                     { icon: <HomeOutlined />, text: "43030 / Kütahya" },
                     { icon: <CalendarOutlined />, text: "28.04.2003" },
                   ].map((item, index) => (
-                    <Paragraph
-                      key={index}
-                      className="contact-item"
-                    >
-                      <span className="contact-icon">
-                        {item.icon}
-                      </span>
+                    <Paragraph key={index} className="contact-item">
+                      <span className="contact-icon">{item.icon}</span>
                       <Text className="contact-text">{item.text}</Text>
                     </Paragraph>
                   ))}
@@ -179,7 +172,7 @@ const About = () => {
                   <div className="timeline-item">
                     <div className="timeline-dot"></div>
                     <div className="timeline-line"></div>
-                    
+
                     <Text strong className="timeline-school">
                       Konya Teknik Üniversitesi
                     </Text>
@@ -202,7 +195,7 @@ const About = () => {
 
                   <div className="timeline-item">
                     <div className="timeline-dot"></div>
-                    
+
                     <Text strong className="timeline-school">
                       Necip Fazıl Kısakürek Anadolu Lisesi
                     </Text>
@@ -274,11 +267,7 @@ const About = () => {
                         "MongoDB",
                         "Entity Framework",
                       ].map((tech) => (
-                        <Tag
-                          key={tech}
-                          color="blue"
-                          className="tech-tag"
-                        >
+                        <Tag key={tech} color="blue" className="tech-tag">
                           {tech}
                         </Tag>
                       ))}
@@ -294,7 +283,7 @@ const About = () => {
           <Card className="content-card">
             <Title level={3} className="section-title">
               <RocketOutlined className="section-icon" />
-              İş Deneyimi
+              Deneyim
             </Title>
 
             <div className="experience-item">
@@ -314,6 +303,40 @@ const About = () => {
                 ve test verimliliğini artıran bir araç geliştirdim. Kullanıcı
                 arayüzü tasarımı, test senaryolarının otomasyonu ve raporlama
                 sistemleri üzerinde çalıştım.
+              </Paragraph>
+
+              <Title level={5} className="experience-company">
+                Siber Vatan
+              </Title>
+              <Tag color="blue" style={{ marginBottom: "10px" }}>
+                Ara 2024 - Tem 2025
+              </Tag>
+              <Text strong className="experience-role">
+                Öğrenci
+              </Text>
+              <Paragraph className="experience-description">
+                <ul className="list-disc list-inside space-y-1">
+                  <li>
+                    <strong>Penetrasyon Testleri:</strong> Ağ ve web
+                    uygulamalarında güvenlik açıklarının tespiti ve sömürülmesi
+                    üzerine uygulamalı çalışmalar.
+                  </li>
+                  <li>
+                    <strong>Zararlı Yazılım Analizi:</strong> Malware türlerinin
+                    incelenmesi, davranış analizi ve olası tehditlerin
+                    belirlenmesi.
+                  </li>
+                  <li>
+                    <strong>Tersine Mühendislik:</strong> Yazılım bileşenlerinin
+                    analiz edilmesi, kod çözümleme ve güvenlik açıklarının
+                    tespiti.
+                  </li>
+                  <li>
+                    <strong>Linux Sistemleri:</strong> Linux tabanlı işletim
+                    sistemlerinde güvenlik, sistem yönetimi ve temel komut
+                    satırı becerileri.
+                  </li>
+                </ul>
               </Paragraph>
             </div>
           </Card>
