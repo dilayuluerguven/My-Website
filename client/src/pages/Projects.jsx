@@ -15,17 +15,17 @@ const Project = () => {
       image: "/images/spendmoney.png"
     },
     { 
-      title: "Proje 3", 
-      description: "Bu proje hakkında kısa bir açıklama.",
-      link: "#",
-      image: null 
+      title: "InnoPaper System", 
+      description: "InnoPaper, kullanıcıların akademik makalelerini yükleyebildiği, ilgili kanıtları ekleyebildiği ve formları otomatik olarak doldurabildiği bir web tabanlı sistemdir. Sistem, doğrulama işlemlerini kolaylaştırır ve sonuçları PDF formatında sunarak süreçleri hızlandırır.",
+      link: "https://innopaper-system.netlify.app/",
+      image: "/images/makale.png" 
     },
-    { 
-      title: "Proje 4", 
-      description: "Bu proje hakkında kısa bir açıklama.",
-      link: "#",
-      image: null
-    }
+    // { 
+    //   title: "Proje 4", 
+    //   description: "Bu proje hakkında kısa bir açıklama.",
+    //   link: "#",
+    //   image: null
+    // }
   ];
 
   const placeholderImage = "/images/placeholder.png"; 
