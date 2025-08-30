@@ -106,7 +106,7 @@ export default function Home() {
             icon={<DownloadOutlined />}
           >
             <a
-              href="/src/assets/DilayCv.pdf"
+              href="/images/dilaycv.pdf"
               download
               style={{ color: "inherit", textDecoration: "none" }}
             >

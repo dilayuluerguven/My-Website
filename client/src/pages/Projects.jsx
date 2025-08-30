@@ -3,26 +3,32 @@ import { Card, Row, Col } from 'antd';
 const Project = () => {
   const projects = [
     { 
-      title: "Proje 1", 
-      description: "Bu proje hakkında kısa bir açıklama.",
-      link: "#"
+      title: "Fake Tweet Generator", 
+      description: "Gerçekçi sahte tweetler oluşturmak için bir web uygulaması. Kullanıcılar isim, avatar ve içerikleri özelleştirerek ikna edici tweetler oluşturabilir ve çıktıyı PNG görüntüsü olarak alabilirler.",
+      link: "https://my-fake-tweet-app-2025.netlify.app",
+      image: "/images/fake-tweet-proje-resmi.png"
     },
     { 
-      title: "Proje 2", 
-      description: "Bu proje hakkında kısa bir açıklama.",
-      link: "#"
+      title: "SpendMoney App", 
+      description: "Gelir ve giderleri kaydetmek, özetleri görüntülemek ve grafikleri kullanarak bütçeni takip etmek için React ve Vite ile geliştirilmiş bir harcama takip uygulaması.",
+      link: "https://my-spendmoney-app-2025.netlify.app",
+      image: "/images/spendmoney.png"
     },
     { 
       title: "Proje 3", 
       description: "Bu proje hakkında kısa bir açıklama.",
-      link: "#"
+      link: "#",
+      image: null 
     },
     { 
       title: "Proje 4", 
       description: "Bu proje hakkında kısa bir açıklama.",
-      link: "#"
+      link: "#",
+      image: null
     }
   ];
+
+  const placeholderImage = "/images/placeholder.png"; 
 
   return (
     <section id="projects" style={{ padding: '100px 20px', textAlign: 'center' }}>
@@ -31,12 +37,21 @@ const Project = () => {
         {projects.map((project, index) => (
           <Col key={index} xs={24} sm={12} md={8} lg={6}>
             <Card 
-              title={project.title} 
               hoverable
+              cover={
+                <img 
+                  alt={project.title} 
+                  src={project.image ? project.image : placeholderImage} 
+                  style={{ objectFit: 'cover', height: '200px', width: '100%' }} 
+                />
+              }
               style={{ height: '100%' }}
               onClick={() => window.open(project.link, '_blank')}
             >
-              <p>{project.description}</p>
+              <Card.Meta 
+                title={project.title}
+                description={project.description} 
+              />
             </Card>
           </Col>
         ))}

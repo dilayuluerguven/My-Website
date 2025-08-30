@@ -81,7 +81,7 @@ const About = () => {
                 >
                   <div className="profile-image-container">
                     <img
-                      src="/src/assets/dilayCvImg.jpg"
+                      src="/images/dilayCvImg.jpg"
                       alt="Dilay Uluergüven"
                       className="profile-image"
                       onError={(e) => {
