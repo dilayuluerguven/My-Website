@@ -1,32 +1,57 @@
 import { Card, Row, Col } from 'antd';
 
 const Project = () => {
-  const projects = [
-    { 
-      title: "Fake Tweet Generator", 
-      description: "Gerçekçi sahte tweetler oluşturmak için bir web uygulaması. Kullanıcılar isim, avatar ve içerikleri özelleştirerek ikna edici tweetler oluşturabilir ve çıktıyı PNG görüntüsü olarak alabilirler.",
-      link: "https://my-fake-tweet-app-2025.netlify.app",
-      image: "/images/fake-tweet-proje-resmi.png"
-    },
-    { 
-      title: "SpendMoney App", 
-      description: "Gelir ve giderleri kaydetmek, özetleri görüntülemek ve grafikleri kullanarak bütçeni takip etmek için React ve Vite ile geliştirilmiş bir harcama takip uygulaması.",
-      link: "https://my-spendmoney-app-2025.netlify.app",
-      image: "/images/spendmoney.png"
-    },
-    { 
-      title: "InnoPaper System", 
-      description: "InnoPaper, kullanıcıların akademik makalelerini yükleyebildiği, ilgili kanıtları ekleyebildiği ve formları otomatik olarak doldurabildiği bir web tabanlı sistemdir. Sistem, doğrulama işlemlerini kolaylaştırır ve sonuçları PDF formatında sunarak süreçleri hızlandırır.",
-      link: "https://innopaper-system.netlify.app/",
-      image: "/images/makale.png" 
-    },
-    // { 
-    //   title: "Proje 4", 
-    //   description: "Bu proje hakkında kısa bir açıklama.",
-    //   link: "#",
-    //   image: null
-    // }
-  ];
+ const projects = [
+  { 
+    title: "Fake Tweet Generator", 
+    description: "Gerçekçi sahte tweetler oluşturmak için bir web uygulaması. Kullanıcılar isim, avatar ve içerikleri özelleştirerek ikna edici tweetler oluşturabilir ve çıktıyı PNG görüntüsü olarak alabilirler.",
+    link: "https://my-fake-tweet-app-2025.netlify.app",
+    image: "/images/fake-tweet-proje-resmi.png"
+  },
+  { 
+    title: "SpendMoney App", 
+    description: "Gelir ve giderleri kaydetmek, özetleri görüntülemek ve grafikleri kullanarak bütçeni takip etmek için React ve Vite ile geliştirilmiş bir harcama takip uygulaması.",
+    link: "https://my-spendmoney-app-2025.netlify.app",
+    image: "/images/spendmoney.png"
+  },
+  { 
+    title: "Article System", 
+    description: "Article System, kullanıcıların akademik makalelerini yükleyebildiği, ilgili kanıtları ekleyebildiği ve formları otomatik olarak doldurabildiği bir web tabanlı sistemdir. Sistem, doğrulama işlemlerini kolaylaştırır ve sonuçları PDF formatında sunarak süreçleri hızlandırır.",
+    link: "https://innopaper-system.netlify.app/",
+    image: "/images/makale.png" 
+  },
+  { 
+    title: "PosApplication", 
+    description: "Ürün yönetimi, stok takibi, sipariş işlemleri ve ödeme entegrasyonu içeren modern bir React & Node.js tabanlı Point of Sale (POS) uygulaması.",
+    link: "#",
+    image: "/images/posapp.png"
+  },
+  { 
+    title: "MediaAssistant", 
+    description: "Kullanıcıların sağlık verilerini takip edebildiği ve raporları güvenli şekilde yönetebildiği ASP.NET Core MVC tabanlı bir web uygulaması.",
+    link: "#",
+    image: "/images/mediaassistant.png"
+  },
+  { 
+    title: "MapAnalyzer", 
+    description: "Gömülü sistemlere ait .map dosyalarını analiz eden, STACK, RAM ve FLASH bellek kullanımını hesaplayan ve görselleştiren C++ (Qt) tabanlı bir araç.",
+    link: "#",
+    image: "/images/mapanalyzer.png"
+  },
+  { 
+    title: "DuckShootGame", 
+    description: "Düşen ördekleri vurarak puan kazandığın refleks tabanlı C++ (Qt) oyunu. Kaç ördeğin vurulduğunu ve kaçının kaçtığını takip eder.",
+    link: "#",
+    image: "/images/duckshoot.png"
+  },
+  { 
+    title: "PuzzleGame", 
+    description: "Parçaları doğru sıraya yerleştirmeye çalıştığın bir C++ (Qt) puzzle oyunu. Oyuncunun yaptığı hamle sayısını takip eder.",
+    link: "#",
+    image: "/images/puzzlegame.png"
+  }
+];
+
 
   const placeholderImage = "/images/placeholder.png"; 
 
