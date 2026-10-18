@@ -180,7 +180,7 @@ const About = () => {
                     </Text>
                     <br />
                     <Tag color="blue" style={{ margin: "8px 0" }}>
-                      2022 - Devam Ediyor
+                      2022 - 2026
                     </Tag>
                     <br />
                     <Text
