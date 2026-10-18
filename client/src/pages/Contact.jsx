@@ -19,7 +19,7 @@ const Contact = () => {
   <Title level={2} style={{ fontSize: '36px', marginBottom: '40px', textAlign: 'center' }}>İletişim</Title>
   
   <Row  gutter={[30, 40]} justify="center" align="stretch" >
-    <Col xs={24} md={10}>
+    <Col xs={24} md={20} >
       <div style={{ 
         background: 'white', 
         padding: '30px', 
@@ -27,7 +27,8 @@ const Contact = () => {
         boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)',
         height: '100%', 
         display: 'flex', 
-        flexDirection: 'column' 
+        flexDirection: 'column', 
+        textAlign: 'center'
       }}>
         <Title level={3} style={{ marginBottom: '20px' }}>İletişim Bilgileri</Title>
         
@@ -96,7 +97,7 @@ const Contact = () => {
     </Col>
 
     <Col xs={24} md={10}>
-      <div style={{ 
+      {/* <div style={{ 
         background: 'white', 
         padding: '30px', 
         borderRadius: '10px', 
@@ -139,7 +140,7 @@ const Contact = () => {
             </Button>
           </Form.Item>
         </Form>
-      </div>
+      </div> */}
     </Col>
   </Row>
 </section>

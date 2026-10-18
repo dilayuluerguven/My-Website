@@ -149,14 +149,16 @@ const About = () => {
                 </Title>
 
                 <Paragraph className="professional-summary">
-                  Konya Teknik Üniversitesi Yazılım Mühendisliği 4. sınıf
-                  öğrencisiyim (Not Ortalaması: 3.38). Yazılım yolculuğuma 1.
-                  sınıfta algoritma ve C programlama ile başladım. 2. sınıfta
-                  Java ile OOP ve C# ile Tasarım Desenleri (Design Patterns)
-                  konularında bilgi edindim. 3. sınıfta ise uzmanlaşmak
-                  istediğim alan olarak web teknolojilerini seçerek, web
-                  geliştirme, kullanıcı arayüzü tasarımı ve veritabanı yönetimi
-                  gibi konulara odaklandım.
+                  Konya Teknik Üniversitesi Yazılım Mühendisliği mezunuyum.
+                  Full-stack web ve masaüstü uygulama geliştirme alanında gerçek
+                  proje deneyimine sahibim. OdakGIS bünyesinde ASP.NET Core,
+                  Entity Framework Core, PostgreSQL ve Angular kullanarak
+                  kurumsal projelerde REST API, veritabanı yönetimi ve dinamik
+                  web arayüzleri geliştirdim; Git/GitLab ile ekip çalışmalarında
+                  yer aldım. TEI – TUSAŞ Motor Sanayii A.Ş.’de Qt kullanarak
+                  test otomasyonuna yönelik arayüz araçları geliştirerek savunma
+                  ve havacılık sektöründeki kurumsal iş akışlarına katkı
+                  sağladım.
                 </Paragraph>
               </Card>
             </FadeIn>
@@ -189,7 +191,7 @@ const About = () => {
                       Mühendisliği
                     </Text>
                     <Text>
-                      Not Ortalaması: <Text strong>3.38</Text>
+                      Not Ortalaması: <Text strong>3.53</Text>
                     </Text>
                   </div>
 
@@ -229,8 +231,8 @@ const About = () => {
                   {skills
                     .filter((skill) =>
                       ["JavaScript", "React", "HTML/CSS", "C++/Qt"].includes(
-                        skill.name
-                      )
+                        skill.name,
+                      ),
                     )
                     .map((skill) => (
                       <SkillBar key={skill.name} {...skill} />
@@ -248,7 +250,7 @@ const About = () => {
                   </div>
                   {skills
                     .filter((skill) =>
-                      ["Node.js", "ASP.NET Core"].includes(skill.name)
+                      ["Node.js", "ASP.NET Core"].includes(skill.name),
                     )
                     .map((skill) => (
                       <SkillBar key={skill.name} {...skill} />
@@ -305,7 +307,25 @@ const About = () => {
                 sistemleri üzerinde çalıştım.
               </Paragraph>
 
-              <Title level={5} className="experience-company">
+              <Title level={4} className="experience-company">
+                OdakGIS Yazılım
+              </Title>
+              <Tag color="blue" style={{ marginBottom: "10px" }}>
+                Kas 2025 - Ağu 2026
+              </Tag>
+              <Text strong className="experience-role">
+                Yazılım Mühendisi Stajyeri
+              </Text>
+              <Paragraph className="experience-description">
+                Angular, ASP.NET Core ve Entity Framework Core kullanarak
+                kurumsal projelerin geliştirilmesine katkı sağladım. REST API
+                geliştirme, PostgreSQL veritabanı entegrasyonu ve dinamik
+                kullanıcı arayüzlerinin oluşturulması süreçlerinde görev aldım.
+                Git ve GitLab kullanarak çevik ekip çalışma süreçlerine dahil
+                oldum.
+              </Paragraph>
+
+              <Title level={4} className="experience-company">
                 Siber Vatan
               </Title>
               <Tag color="blue" style={{ marginBottom: "10px" }}>
